@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./Styles.css" />
+    <title>Posts</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <div class="logo">
+            <i class="fas fa-mobile"></i>
+            <h4 style="color: rgb(222, 173, 67);"> <pre> Al-Dali</pre></h4>
+        </div>
+        <div class="bars-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-items">
+            <li class="nav-item">
+                <a href="./index.html" class="nav-link">Home </a>
+            </li>
+            <li class="nav-item">
+                <a href="./AllPhone.html" class=" nav-link ">All Product</a>
+            </li>
+        </ul>
+    </nav>
+    <form class="product-form" style="margin-top: 10rem;" enctype="multipart/form-data">
+        <h4>Add New Product</h4>
+        <label for="title">Title:</label>
+        <input type="text" id="title" name="title">
+
+        <label for="description">Description:</label>
+        <textarea id="description" name="description"></textarea>
+
+        <label for="image">Add Image:</label>
+        <input type="file" id="image" name="image">
+
+        <button type="submit" id="add-product-btn">Add Product</button>
+    </form>
+    <script src="./script.js ">
+    </script>
+    <script>
+        addProduct();
+    </script>
+</body>
+
+</html>
